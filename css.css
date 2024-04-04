@@ -1,0 +1,421 @@
+/* Adicionando a paleta de cores azul e violeta */
+:root {
+    --cor-primaria: #4ca80fa8; /* Azul escuro */
+    --cor-secundaria: #10919677; /* Amarelo */
+    --cor-terciaria: #202020 ; /* Amarelo */
+    --cor-texto: #333; /* Preto */
+    
+}
+    body {
+        max-width: 100%; /* Largura máxima da página */
+        max-height: 100%;
+        margin: 0 auto; /* Centraliza a página na tela */
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 10;
+    background-color: black;
+        background-size: 1000%;
+        color: var(--cor-texto);
+        font-size: 16px; /* Tamanho de fonte global reduzido */
+        zoom: 100%;
+    } 
+    /* Estilize a imagem do perfil */
+   
+    
+    .separaçao img {
+        width: 500px; /* Defina a largura da imagem */
+        height: auto; /* Defina a altura da imagem */
+       
+    }
+   
+    #img1{
+        width: 450px;
+       
+        display: inline-block;
+        vertical-align: top; /* ou middle, bottom para ajustar verticalmente */
+        float: left; /* ou float: right; */
+        margin-left: 50px; /* ou margin-left: 20px; para o lado oposto */
+        margin-top: 50px;
+
+
+    }
+
+    #img2{
+        display: inline-block;
+        vertical-align: top; /* ou middle, bottom para ajustar verticalmente */
+        float: right; /* ou float: right; */
+        margin-right: 50px; /* ou margin-left: 20px; para o lado oposto */
+        margin-top: 50px;
+
+    }
+  
+    #img4{
+        display: inline-block;
+        vertical-align: top; /* ou middle, bottom para ajustar verticalmente */
+        float: center
+        ; /* ou float: right; */
+        margin-top: -100px;
+        margin-left: 20px;
+        width: 400px; /* Defina a largura da imagem */
+        height: 300px; /* Defina a altura da imagem */
+        
+    
+    }
+    #onda1{
+        
+        float: center;
+      
+        margin-top: -100px;
+    
+        width: 1857px; /* Defina a largura da imagem */
+        height: 200px;
+
+}
+  
+    #img5{
+        display: inline-block;
+        vertical-align: top; /* ou middle, bottom para ajustar verticalmente */
+        float: center; /* ou float: right; */
+        margin-top: -100px;
+        margin-left: 85px;
+        width: 400px; /* Defina a largura da imagem */
+        height: auto; /* Defina a altura da imagem */
+        
+
+    }
+    #back{
+
+        background-color: #000;
+    }
+    .menu-bars {
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+    }
+    .title-image {
+        position: absolute;
+        top: 50%; /* Posiciona a imagem no meio verticalmente */
+        right: 300px; /* Define a distância da direita */
+        
+        transform: translateY(-50%); /* Move a imagem para cima pela metade da sua própria altura */
+    }
+    
+    .title-image img {
+        width: 500px; /* Aumenta a largura da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 10px; /* Adiciona borda arredondada */
+        border: 2px solid #fff; /* Adiciona uma borda branca à imagem */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave à imagem */
+        background-color: rgba(255, 255, 255, 0.5); /* Adiciona um fundo transparente à imagem */
+    }
+    
+    .cta-container {
+        position: relative;
+        margin-top: -100px; /* Ajuste para subir o botão */
+    }
+    
+    .cta-button {
+        position: absolute;
+        top: -250px; /* Movido para cima */
+        left: 350px; /* Movido para a esquerda */
+        background-color: white; /* Cor de fundo branca */
+        color: black; /* Cor do texto preto */
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s;
+        z-index: 1;
+        
+    }
+    #textoe{
+
+        font-family:'Courier New', Courier, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+ 
+
+    }
+    
+    .cta-button:hover {
+        background-color: #1e00ff; /* Cor de fundo quando hover */
+        color: rgb(255, 255, 255); /* Cor do texto quando hover */
+    }
+    
+    
+    
+    
+    
+    
+    /* Estilo para o menu lateral */
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Esconde o menu inicialmente */
+        width: 250px;
+        height: 100%;
+        background: #000000;
+        transition: left 0.3s; /* Alterada a propriedade de transição */
+    }
+    
+    #sidebar.active {
+        left: 0; /* Mostra o menu quando estiver ativo */
+        z-index: 999; /* Adicionado para garantir que o menu fique acima de outros elementos */
+    }
+   
+    /* Estilizando o perfil */
+    .profile {
+        padding: 20px;
+        text-align: center;
+        color: white;
+        border-bottom: 1px solid #555; /* Adiciona uma borda inferior */
+    }
+    
+    /* Estilo para os links do menu */
+    .sidebar-menu {
+        padding: 20px;
+    }
+    
+    .sidebar-menu a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 10px 20px; /* Adiciona padding horizontal */
+        text-decoration: none;
+        font-size: 18px; /* Tamanho da fonte dos links */
+        transition: background-color 0.3s; /* Transição de cor de fundo */
+    }
+  
+    .sidebar-menu a:hover {
+        background: #555;
+    }
+    
+    /* Estilizando os ícones */
+    .sidebar-menu i {
+        margin-right: 10px;
+    }
+    
+  
+  
+    
+    
+    .close-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #header {
+        background-color: black;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+
+
+/* Hero Section */
+.hero {
+   background-color: #000000;
+    text-align: center;
+    padding: 150px 0; /* Redução do padding na seção hero */
+}
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Adiciona quebra de linha para os itens */
+    margin-top: 50px; /* Espaçamento acima da seção "Sobre" */
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Adiciona quebra de linha para os itens */
+    margin-top: 50px; /* Espaçamento acima da seção "Sobre" */
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Espaçamento entre os itens */
+    padding: 30px; /* Preenchimento interno dos itens */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 300px; /* Largura dos itens */
+    height: 400px; /* Altura dos itens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+.about-item:hover {
+    transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.about-item h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+.about-item p {
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Tamanho da fonte do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+
+.about-item img {
+    width: 150px; /* Define o tamanho fixo para as imagens */
+    height: 150px; /* Define o tamanho fixo para as imagens */
+    border-radius: 50%; /* Torna as imagens circulares */
+    margin-bottom: 10px; /* Espaçamento abaixo das imagens */
+}
+
+
+
+/* Text Medium Section */
+.text-medium {
+    background-color: #f9f9f9;
+    padding: 40px 0; /* Redução do espaço ao redor da seção */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(55, 54, 54, 0.2); /*sombra nas letras*/
+}
+
+.text-medium h2 {
+    margin-bottom: 30px; /* Redução do espaço abaixo do título */
+}
+
+.text-medium p {
+    line-height: 1.6; /* Ajustando o espaçamento entre linhas */
+    font-family:Arial, Helvetica, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: black;
+    
+   
+    
+}
+
+
+    
+
+
+
+
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9; /* Cor de fundo */
+    padding: 40px 0; /* Espaçamento ao redor da seção */
+    text-align: center; /* Centralizar conteúdo */
+}
+
+.contact-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Quebra de linha */
+}
+
+.contact-symbol {
+    font-size: 30px;
+    margin: 0 10px; /* Espaçamento entre os símbolos */
+}
+
+.contact-square {
+    width: calc(25% - 40px); /* Largura dos quadrados */
+    height: 530px;
+    margin: 20px; /* Espaçamento entre os quadrados */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar texto */
+    border: 2px solid #000; /* Borda */
+    border-radius: 10px; /* Borda arredondada */
+    background-color: #fff; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+@media screen and (max-width: 768px) {
+    .contact-square {
+        width: 90%; /* Define a largura para 90% da largura da tela */
+        max-width: 300px; /* Define a largura máxima dos itens */
+    }
+}
+
+.contact-square:hover {
+    transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.contact-square h3 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+.contact-square p {
+    margin-bottom: 10px; /* Espaçamento abaixo dos parágrafos */
+    font-size: 20px; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
+}
+
+.contact-square i {
+    font-size: 80px; /* Tamanho do ícone */
+    margin-bottom: 10px; /* Espaçamento abaixo do ícone */
+    color: #000000; /* Cor do ícone */
+   
+}
+
+.contact-square img {
+    width: 100px; /* Largura da imagem */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+
+
+
+
+/* Text Medium Section */
+.text-medium {
+    background-color: #f9f9f9;
+    padding: 40px 0; /* Redução do espaço ao redor da seção */
+    text-align: center;
+}
+
+.text-medium h2 {
+    margin-bottom: 30px; /* Redução do espaço abaixo do título */
+}
+
+.text-medium p {
+    line-height: 1.6; /* Ajustando o espaçamento entre linhas */
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+#qrcode {
+
+width: 150px;
+height: 150px;
+
+}
